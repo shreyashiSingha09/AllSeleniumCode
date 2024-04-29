@@ -18,6 +18,7 @@ public class RelativeLocatorsEx1 {
        WebElement labelTag= driver.findElement(By.cssSelector("[name='name']"));
 
        //Use the relative locator above() to know the level of the text field called Name
+
        System.out.println(driver.findElement(with(By.tagName("label")).above(labelTag)).getText());
 
        //Print the input field text value below of DOB field
