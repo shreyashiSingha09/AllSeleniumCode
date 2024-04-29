@@ -23,6 +23,7 @@ public class NewWindow {
         Iterator<String> it = handles.iterator();
         String parentWindowId = it.next();
         String childWindowId = it.next();
+
         driver.switchTo().window(childWindowId);
         driver.get("https://rahulshettyacademy.com/");
 
