@@ -25,7 +25,7 @@ public class RelativeLocatorsEx1 {
         WebElement labeltag2=driver.findElement(By.cssSelector("[for='dateofBirth']"));
         driver.findElement(with(By.tagName("input")).below(labeltag2)).click();
 
-        //Check the check box based upon the level of the check box and this box present left of the text
+        //Check the checkbox based upon the level of the check box and this box present left of the text
         WebElement labeltag3=driver.findElement(By.xpath("//label[text()='Check me out if you Love IceCreams!']"));
         driver.findElement(with(By.tagName("input")).toLeftOf(labeltag3)).click();
 
