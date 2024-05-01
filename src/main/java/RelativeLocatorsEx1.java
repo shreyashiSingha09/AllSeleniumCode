@@ -21,7 +21,7 @@ public class RelativeLocatorsEx1 {
 
        System.out.println(driver.findElement(with(By.tagName("label")).above(labelTag)).getText());
 
-       //Print the input field text value below of DOB field
+       //Print the input field text value below of DOB fields
         WebElement labeltag2=driver.findElement(By.cssSelector("[for='dateofBirth']"));
         driver.findElement(with(By.tagName("input")).below(labeltag2)).click();
 
